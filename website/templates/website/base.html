@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Viking Age</title>
+        {% load static %}
+        <meta name = "author" content="Student">
+        <meta name = "keywords" content="Viking">
+        <meta name = "description" content="Website de projecto">
+        <meta name = "location" content="ulusofona">
+        <link rel="shortcut icon" href="{% static 'website/images/favicon.ico'%}" type="image/x-icon">
+        <link rel="stylesheet" href="{% static 'website/css/base.css'%}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <section><h1>The Viking Age</h1></section>
+</header>
+<main class="main">
+<section class="Informacion">
+<section class="nav">
+   <section class="nave"><nav>
+        <a href="{% url 'home' %}"><i class="material-icons">home</i>Home </a>
+       <a href="{% url 'login' %}"><i class="material-icons">home</i>Login</a>
+        <a href="{% url 'information' %}"><i class="material-icons">library_books</i>Webbsite Information </a>
+        <a href="{% url 'media' %}"><i class="material-icons">movie</i>Media </a>
+       <a href="{% url 'quizz' %}"><i class="material-icons">library_books</i>A Viking Quiz</a>
+        <a href="{% url 'comments' %}"><i class="material-icons">supervised_user_circle</i>Comment Section</a>
+       <a href="{% url 'contact' %}"><i class="material-icons">library_books</i>Contact</a>
+        <u><div class="droopdown">
+            <a class="dropbtn"> <i class="material-icons">menu</i> Viking Informacion
+            </a>
+            <div class="Statistic-content">
+                <a href="{% url 'war' %}"><i class="material-icons">library_books</i>Warfare</a>
+                <a href="{% url 'raids' %}"><i class="material-icons">library_books</i>Geography and Raids</a>
+                <a href="{% url 'religion' %}"><i class="material-icons">library_books</i>Religion</a>
+            </div>
+        </div>
+        </u>
+        </nav>
+    </section>
+</section>
+{% block content %}
+{% endblock %}
+<aside class="Other">
+    <section class="others">
+    <a href="https://www.history.com/topics/exploration/vikings-history"><i class="material-icons">library_books</i>History</a>
+    <a href="https://en.wikipedia.org/wiki/Vikings"><i class="material-icons">library_books</i>Wikipedia</a>
+    <a href="https://www.vikingeskibsmuseet.dk/en/professions/education/viking-knowledge/the-viking-age-geography"><i class="material-icons">library_books</i>Geography detailed</a>
+    <a href="https://www.fjordtours.com/inspiration/articles/norse-gods/"><i class="material-icons">library_books</i>Mythology</a>
+    <a href="https://www.visitdenmark.com/denmark/things-do/history-and-culture/vikings-facts-and-myths"><i class="material-icons">library_books</i>Myths and Facts</a>
+    </section>
+</aside>
+</section>
+</main>
+</body>
+<footer class="footer">
+    <br>Student of <a href="https://www.ulusofona.pt/">ulusofona</a> 2021</br>
+</footer>
+</html>

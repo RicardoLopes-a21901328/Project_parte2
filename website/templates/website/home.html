@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="textos">
+        <figure class="swim">
+            <img src="{% static 'website/images/viking_ship-removebg-preview.png'%}" alt = "My image">
+        </figure>
+        <article><p>
+            <h2><a>Introduction</a></h2>
+        </p>
+        <p>Vikings were the seafaring Norse people from southern Scandinavia in the present-day Denmark, Norway and Sweden, who from the late 8th to late 11th centuries raided, pirated, traded and settled throughout parts of Europe. They explored both westward to England, Iceland, Greenland, and Vinland as well as eastward and southward through Russia to Constantinople, Iran, and Arabia. In the countries they raided and settled, the period is known as the Viking Age.</p></article>
+    <iframe width="auto" height="200" src="https://www.youtube.com/embed/ExvEIOWB-H0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+    <svg width = 500 height ="300">
+        <g transform="translate(100,100)">
+            <text id="TextElement" x="-40" y="-20"  transform = rotate(30,120,400)><a href="https://www.history.com/topics/exploration/vikings-history">Raids</a>
+              </text>
+              <text id="TextElement" x="-30" y="-40"  transform = rotate(130,100,40)><a href="https://www.lifeinnorway.net/viking-religion/">Religion</a>
+              </text>
+              <text id="TextElement" x="-30" y="-20"  transform = rotate(-50,300,-260)><a href="https://www.worldhistory.org/Viking_Warfare/">Warfare</a>
+              </text>
+              <text id="TextElement" x="-60" y="-30" transform = rotate(90,50,80)><a>Medieval</a>
+              </text>
+              <text id="TextElement" x="200" y="-30"  transform = rotate(50,0,-140)><a href="https://avaldsnes.info/en/viking/vikingskip/">Ships</a>
+              </text>
+              <text id="TextElement" x="45" y="-30"  transform = rotate(90,50,80)><a href="http://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/weapons/#:~:text=In%20the%20Viking%20Age%20a,depended%20on%20their%20economic%20capacity.">Weapons</a>
+              </text>
+              <text id="TextElement" x="90" y="150"  transform = rotate(0,60,40)><a>Kings</a>
+              </text>
+              <text id="TextElement" x="200" y="150"  transform = rotate(0,50,80)><a href="https://englishhistory.net/vikings/viking-gods/">Gods</a>
+              </text>
+              <text id="TextElement" x="85" y="90"  transform = rotate(0,60,40)><a>Queens</a>
+              </text>
+              <text id="TextElement" x="200" y="90"  transform = rotate(0,60,40)><a>Armie</a>
+              </text>
+        </g>
+    </svg>
+    <figure class="swim">
+            <img src="{% static 'website/images/viking_ship-removebg-preview.png'%}" alt = "My image">
+    </figure>
+</section>
+{% endblock %}
+</html>

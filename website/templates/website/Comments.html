@@ -1,0 +1,42 @@
+<html lang="en">
+{% extends 'website/base.html' %}
+{% load static %}
+{% block content %}
+    <section class="textos">
+        <h2><p>Comment and Avaluation</p></h2>
+        <form method="post" action="mailto:ricostalopes@gmail.com">
+            <fieldset class="filed">
+                <legend>Insert Your Opinion were.</legend>
+                <section><aside><p>For the simple reason of making future updates make sure answer as many questions.</p></aside>
+            <p>From 1 to 10 how much do u give to this site Information.</p>
+        <p>
+            <input type="number" max="10" min="0" step="1">
+                </p>
+                <p>Creativity:</p>
+                <p>
+                    <input type="radio" name="opinion6" value="Muito bom">
+                    <label for="Muito bom">Very Good</label><br>
+                    <input type="radio" name="opinion7" value="Bom">
+                    <label for="Bom">Good</label><br>
+                    <input type="radio" name="opinion8" value="Razoavel">
+                    <label for="Razoavel">More or less</label><br>
+                    <input type="radio" name="opinion9" value="Mau">
+                    <label for="Mau">Bad</label><br>
+                    <input type="radio" name="opinion10" value="Péssimo">
+                    <label for="Péssimo">The worst.</label><br>
+                </p>
+                <p>how much do you like the topic:</p>
+                <p>
+                    <input type = "range" name = "perguntas6" min="0" max="100" step="any">
+                </p>
+                <p>Please introduce your opinion if any.</p>
+                <p>
+                    <textarea textarea name="Sugestão" rows="10" style="width: 200px; height: 100px; resize: none;"></textarea>
+                </p></section>
+                <input type="hidden" name="project" value="3">
+            </fieldset>
+            <input type="submit" value= "Submit">
+        </form>
+    </section>
+{% endblock %}
+</html>

@@ -1,0 +1,127 @@
+<html lang="en">
+{% extends 'website/base.html' %}
+{% load static %}
+{% block content %}
+    <section class="textos">
+        <article><h2><p>Webbsite Information</p></h2>
+        <p>This webbsite was created to be the first part of my project in web programming ,in this page will be shown, described and explained the principal characteristics, his window map, how it was builed and will be also shown some tables whith extra information.</p></article>
+        <br></br>
+        <article><section class = "map"><p><h3><p>Menu Map</p></h3>
+        <br>Home - short introdution.</br>
+        <br>Webbsite Information - Information about the webbsite.</br>
+        <br>Media - videos , images and information about some series and video games with this theme</br>
+        <br>Comment Section - send me your opinion about the webbsite</br>
+        <br>Viking Informacion - information about the Viking Age it divides in:</br>
+        <div>
+        <div>
+            <br>Warfare ,</br>
+            <br>Geography and Raids ,</br>
+            <br>Religion </br>
+        </div>
+        </div>
+        </section></article>
+        <br></br>
+    <article><h3><p> Layouts </p></h3>
+                    <center><figure class="ima">
+                        <img src="{% static 'website/images/pc.jpg'%}" class="ima">
+                                <figcaption>Fig.1 - Pc Layout</figcaption>
+                    </figure></center>
+            <p>This is the first Layout it is a simple layout with the text ,images and video in the center , the menu on the left and the aside on the right the aside only has the links to some sites that are about this theme and also with some curiositys ,the header is just the title and the footer is located below the everything .</p>
+            <p>The text is all centered.</p> <p>why imagine a scroll because that was my first idea with the header and footer being the parts were the person grab the scroll ,the menu and aside the table and the text  was the paper but that was too roman so i created a Layout personalised to the theme in question.</p>
+                    <center><figure class="ima">
+                        <img class="ima" src="{% static 'website/images/port.jpg'%}">
+                        <figcaption>Fig.2 - portable Layout</figcaption>
+                    </figure></center>
+            <p>In the portable Layout the navigation menu goes to the top and is now located in between the header and the text the aside goes below the text and above the footer</p>
+            <p>In this part the text is place all in the left with the images, tables and videos all centered.</p>
+    </article>
+    <article><h3><p>Inventory</p></h3></article>
+        <table border = "10px" summary = "Tabela" style="color: white">
+            <caption style="color: white">
+                 Inventory table
+            </caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Number</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                    <td> Webb pages </td>
+                    <td> 7 </td>
+            <tr>
+                <td> Images </td>
+                <td> 22 different images with the backgrounds and 18 without them.</td>
+            </tr>
+            <tr>
+                <td> Extralinks/External Links </td>
+                <td> 43 different links images included.</td>
+            </tr>
+            <tr>
+                <td> videos </td>
+                <td>7 videos</td>
+            </tr>
+            <tr>
+                <td> Animation </td>
+                <td> 3 difirent animations</td>
+            </tr>
+        </tbody>
+    </table><b></b>
+    <article><h3><p>Tecnics used</p></h3></article>
+    <table border = "10px" summary = "Tabela" style="color: white">
+        <caption style="color: white">
+             Tecnics Used
+        </caption>
+        <thead>
+            <tr>
+                <th>Features</th>
+                <th>Elements/tecnics</th>
+                <th>Examples</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Layouts </td>
+                <td> Was used Css grid in the menu and aside and Css flex was used in the all layout.</td>
+                <td>Exemple of flex was use in the titules.</td>
+            </tr>
+            <tr>
+            <td> Responsiveness </td>
+            <td> The tecnics used was the redemention of the text to the left and ths size of the images and videos also the menu goes to the top and is now located in between the header and the text the aside goes below the text and above the footer.</td>
+            <td> The size of the images the backgrounds of the menu and aside change.</td>
+            </tr>
+        <tr>
+            <td> Selectors </td>
+            <td> were use in the majority the selectors .a , .a:houver e .a a</td>
+            <td><figure class="ima3">
+                <a href="{% static 'website/images/other.png'%}"><img src="{% static 'website/images/other.png'%}"></a>
+                <figcaption>Fig3 - Selector example</figcaption>
+            </figure></td>
+        </tr>
+        <tr>
+            <td> Reference </td>
+            <td>
+                Were use the aside, header, head, main, section, body, and others.
+            </td>
+            <td>
+                <figure class="ima3">
+                    <a href="{% static 'website/images/ola.png'%}"><img src="{% static 'website/images/ola.png'%}"></a>
+                    <figcaption>Fig4 - Reference example</figcaption>
+                </figure>
+            </td>
+        </tr>
+        <tr>
+            <td> Animation </td>
+            <td>
+                Were used animations using keywords that make the image go up down left right.
+            </td>
+            <td>The image on the top of the home page.</td>
+        </tr>
+    </tbody>
+</table>
+<h2><p>Video about the webbsite</p></h2>
+<iframe width="auto" height="200" src="https://www.youtube.com/embed/ZZJD7cdUeSs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+{% endblock %}
+</html>

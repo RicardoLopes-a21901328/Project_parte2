@@ -1,0 +1,20 @@
+<html lang="en">
+{% extends 'website/base.html' %}
+{% load static %}
+{% block content %}
+     <section class="post">
+    <h2><p>Contact</p></h2>
+    <p></p>
+        <form method="post" action="mailto:ricostalopes@gmail.com">
+            <fieldset>
+            <p>Name: <input type="text" name = "nome" required></p>
+            <p>Email: <input type="email" name = "email" required></p>
+            <p>Mensage:<p>
+            <textarea textarea name="Sugestão" rows="10" style="width: 250px; height: 200px; resize: none; margin-left: 75px"></textarea>
+                <p></p>
+            <center><input type="submit" value= "Submit"></center>
+            </fieldset>
+        </form>
+    </section>
+{% endblock %}
+</html>
