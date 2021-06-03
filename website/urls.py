@@ -12,4 +12,7 @@ urlpatterns = [
     path('information',views.information_page_view,name='information'),
     path('quizz',views.quiz_page_view,name='quizz'),
     path('contact',views.contact_page_view,name='contact'),
+    path('novocontacto',views.novocontact_page_view, name = 'novocontacto'),
+    path('editarco/<int:contacto_id>',views.editar_page_view, name = 'editarco'),
+    path('apaga/<int:contacto_id>', views.apaga_contacto_view, name= 'delete'),
 ]

@@ -23,20 +23,20 @@
 <section class="Informacion">
 <section class="nav">
    <section class="nave"><nav>
-        <a href="{% url 'home' %}"><i class="material-icons">home</i>Home </a>
-       <a href="{% url 'login' %}"><i class="material-icons">home</i>Login</a>
-        <a href="{% url 'information' %}"><i class="material-icons">library_books</i>Webbsite Information </a>
-        <a href="{% url 'media' %}"><i class="material-icons">movie</i>Media </a>
-       <a href="{% url 'quizz' %}"><i class="material-icons">library_books</i>A Viking Quiz</a>
-        <a href="{% url 'comments' %}"><i class="material-icons">supervised_user_circle</i>Comment Section</a>
-       <a href="{% url 'contact' %}"><i class="material-icons">library_books</i>Contact</a>
+       <button type="button" class="btn btn-outline-secondary"><a href="{% url 'home' %}"><i class="material-icons">home</i>Home </a></button>
+       <button type="button" class="btn btn-outline-secondary"><a href="{% url 'login' %}"><i class="material-icons">home</i>Login</a></button>
+       <button type="button" class="btn btn-outline-secondary"><a href="{% url 'information' %}"><i class="material-icons">library_books</i>Webbsite Information </a></button>
+       <button type="button" class="btn btn-outline-secondary"><a href="{% url 'quizz' %}"><i class="material-icons">library_books</i>A Viking Quiz</a></button>
+       <button type="button" class="btn btn-outline-secondary"><a href="{% url 'comments' %}"><i class="material-icons">supervised_user_circle</i>Comment Section</a></button>
+       <button type="button" class="btn btn-outline-secondary"><a href="{% url 'contact' %}"><i class="material-icons">library_books</i>Contact</a></button>
         <u><div class="droopdown">
             <a class="dropbtn"> <i class="material-icons">menu</i> Viking Informacion
             </a>
             <div class="Statistic-content">
-                <a href="{% url 'war' %}"><i class="material-icons">library_books</i>Warfare</a>
-                <a href="{% url 'raids' %}"><i class="material-icons">library_books</i>Geography and Raids</a>
-                <a href="{% url 'religion' %}"><i class="material-icons">library_books</i>Religion</a>
+                <button type="button" class="btn btn-outline-secondary"><a href="{% url 'war' %}"><i class="material-icons">library_books</i>Warfare</a></button>
+                <button type="button" class="btn btn-outline-secondary"><a href="{% url 'raids' %}"><i class="material-icons">library_books</i>Geography and Raids</a></button>
+                <button type="button" class="btn btn-outline-secondary"><a href="{% url 'media' %}"><i class="material-icons">movie</i>Media </a></button>
+                <button type="button" class="btn btn-outline-secondary"><a href="{% url 'religion' %}"><i class="material-icons">library_books</i>Religion</a></button>
             </div>
         </div>
         </u>
@@ -47,11 +47,11 @@
 {% endblock %}
 <aside class="Other">
     <section class="others">
-    <a href="https://www.history.com/topics/exploration/vikings-history"><i class="material-icons">library_books</i>History</a>
-    <a href="https://en.wikipedia.org/wiki/Vikings"><i class="material-icons">library_books</i>Wikipedia</a>
-    <a href="https://www.vikingeskibsmuseet.dk/en/professions/education/viking-knowledge/the-viking-age-geography"><i class="material-icons">library_books</i>Geography detailed</a>
-    <a href="https://www.fjordtours.com/inspiration/articles/norse-gods/"><i class="material-icons">library_books</i>Mythology</a>
-    <a href="https://www.visitdenmark.com/denmark/things-do/history-and-culture/vikings-facts-and-myths"><i class="material-icons">library_books</i>Myths and Facts</a>
+        <button type="button" class="btn btn-outline-secondary"><a href="https://www.history.com/topics/exploration/vikings-history"><i class="material-icons">library_books</i>History</a></button>
+        <button type="button" class="btn btn-outline-secondary"><a href="https://en.wikipedia.org/wiki/Vikings"><i class="material-icons">library_books</i>Wikipedia</a></button>
+        <button type="button" class="btn btn-outline-secondary"><a href="https://www.vikingeskibsmuseet.dk/en/professions/education/viking-knowledge/the-viking-age-geography"><i class="material-icons">library_books</i>Geography detailed</a></button>
+        <button type="button" class="btn btn-outline-secondary"><a href="https://www.fjordtours.com/inspiration/articles/norse-gods/"><i class="material-icons">library_books</i>Mythology</a></button>
+        <button type="button" class="btn btn-outline-secondary"><a href="https://www.visitdenmark.com/denmark/things-do/history-and-culture/vikings-facts-and-myths"><i class="material-icons">library_books</i>Myths and Facts</a></button>
     </section>
 </aside>
 </section>

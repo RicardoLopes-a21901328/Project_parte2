@@ -1,5 +1,9 @@
-from django.shortcuts import render
+from django.http import HttpResponseRedirect
+from django.shortcuts import render, reverse
 import datetime
+
+from .forms import ContacoForm
+from .models import contacto
 
 def home_page_view(request):
     lista = ["HTML", "CSS", "Python", "Django"]
@@ -24,10 +28,32 @@ def comments_page_view(request):
 def information_page_view(request):
     return render(request, 'website/imformation.html')
 def contact_page_view(request):
-    return render(request, 'website/contact.html')
+    context = {'contactos': contacto.objects.all()}
+    return render(request, 'website/contact.html',context)
 def quiz_page_view(request):
     return render(request, 'website/quizz.html')
+def novocontact_page_view(request):
+    form = ContacoForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+        return HttpResponseRedirect(reverse('contact'))
 
+    context = {'form': form}
+    return render(request, 'website/novocontacto.html',context)
+
+def editar_page_view(request, contacto_id):
+
+    contato = contacto.objects.get(pk=contacto_id)
+    form = ContacoForm(request.POST or None, instance = contato)
+    if form.is_valid():
+        form.save()
+        return HttpResponseRedirect(reverse('contact'))
+
+    context = {'form': form, 'contacto_id': contacto_id}
+    return render(request, 'website/editarcontacto.html',context)
+def apaga_contacto_view(request, contacto_id):
+    contacto.objects.get(id=contacto_id).delete()
+    return HttpResponseRedirect(reverse('contact'))
 
 
 

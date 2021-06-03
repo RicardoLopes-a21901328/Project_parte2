@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'website/base.html' %}
+{% load static %}
+{% block content %}
+ <section class="post">
+    <center><h2><p>Contact</p></h2></center>
+    <p></p>
+        <form method="Post" action="{% url 'editarco' contacto_id %}">
+            {% csrf_token %}
+
+            {{ form.as_p }}
+            <a href="{% url 'contact' %} " role="button" class="btn-danger">Cancel</a>
+            <input type="submit" value= "Gravar" class="btn btn-success">
+            <a href="{% url 'delete' contacto_id %} " role="button" class="btn-danger">Delete</a>
+        </form>
+    </section>
+{% endblock %}
+</html>

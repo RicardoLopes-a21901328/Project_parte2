@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'website/base.html' %}
+{% load static %}
+{% block content %}
+ <section class="post">
+    <center><h2><p>Contact</p></h2></center>
+    <p></p>
+         <form method="Post" action="">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value= "Gravar" class="btn btn-success">
+        </form>
+    </section>
+{% endblock %}
+</html>
