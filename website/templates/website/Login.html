@@ -3,10 +3,17 @@
 {% load static %}
 {% block content %}
     <section class="textos">
-        <h2><p>Comment and Avaluation</p></h2>
-        <form method="post" action="mailto:ricostalopes@gmail.com">
+        <h2><p>Login</p></h2>
+        {% if message %}
+        <div>{{ message }}</div>
+        {% endif %}
+        <form action="{% url 'login' %}" method="POST">
+            {% csrf_token %}
+            <input type="text" name="username" placeholder="username"><br>
+            <input type="text" name="password" placeholder="password"><br>
+            <input type="text" name="email" placeholder="email">
             <fieldset class="filed">
-            <input type="submit" value= "Submit">
+            <input type="submit" value= "Login">
             </fieldset>
         </form>
     </section>

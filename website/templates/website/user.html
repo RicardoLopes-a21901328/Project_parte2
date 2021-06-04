@@ -1,0 +1,14 @@
+<html lang="en">
+{% extends 'website/base.html' %}
+{% load static %}
+{% block content %}
+    <section class="textos">
+    <h1>Welcome, {{ request.user.first_name }}</h1>
+    <ul>
+        <li>Username: {{ request.user.username }}</li>
+        <li>Username: {{ request.user.email }}</li>
+    </ul>
+    <a href="{% url 'logout' %}">Logout</a>
+    </section>
+{% endblock %}
+</html>

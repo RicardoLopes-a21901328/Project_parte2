@@ -15,4 +15,7 @@ urlpatterns = [
     path('novocontacto',views.novocontact_page_view, name = 'novocontacto'),
     path('editarco/<int:contacto_id>',views.editar_page_view, name = 'editarco'),
     path('apaga/<int:contacto_id>', views.apaga_contacto_view, name= 'delete'),
+    path('login',views.login_view,name='login'),
+    path('logout',views.logout_view,name='logout'),
+    path('quizzre',views.quizz_result,name='quizzresult')
 ]
