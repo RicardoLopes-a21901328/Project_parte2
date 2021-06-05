@@ -1,0 +1,416 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-image: url("../images/serpent2E.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: top;
+}
+
+header{
+    display: flex;
+    color: white;
+    background-image: url("../images/separador-remove-preview-removebg-preview (1).png");
+    align-content: center;
+    background-color: transparent;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 4%;
+    margin-right: 4%;
+    min-height: 175px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+#menu a{
+    position: -webkit-sticky;
+    position: sticky;
+    text-align: center;
+    color: white;
+    margin: 50px;
+    padding: 20px 100px 20px 0px;
+}
+.nav{
+    display: flex;
+    background-image: url("../images/haty_skoll9.jpg");
+    padding: 4%;
+    flex-direction: column;
+    color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin-left: 4%;
+    align-items: center;
+    min-width: 15%;
+    grid-column: auto;
+    background-size: 100% 100%;
+    min-height: auto;
+    background-repeat: no-repeat;
+}
+.nave{
+    display: flex;
+    padding: 4%;
+    flex-direction: column;
+    color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin-left: 4%;
+    align-items: center;
+    min-width: 15%;
+    grid-column: auto;
+    min-height: auto;
+}
+
+.nav a:hover{
+    background-color: transparent;
+    color: darkred;
+}
+.button{
+    color: red;
+}
+ .Other{
+    display: flex;
+    padding: 4%;
+    flex-direction: column;
+    color: white;
+    background-image: url("../images/haty_skoll10.jpg");
+    margin-right: 4%;
+    max-width: 15%;
+    min-width: 15%;
+    min-height: 700px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+ }
+ .others{
+    display: flex;
+    padding: 4%;
+    flex-direction: column;
+    color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin-right: 4%;
+    align-items: center;
+    min-width: 15%;
+    grid-column: auto;
+    min-height: auto;
+ }
+.nav a{
+    display: flex;
+    flex-direction: row;
+    color:white;
+    grid-row: auto;
+    padding: 6px;
+    background-color: transparent;
+}
+.filled{
+    border-style: groove;
+    background-color: white;
+}
+.textos{
+    display: flex;
+    background-color: #535250;
+    text-align: center;
+    align-items: center;
+    opacity: 0.95;
+    min-width: 62%;
+    max-width: 62%;
+    flex-direction: column;
+    color:white;
+}
+.menu a:hover .droopdown:hover .dropbtn {
+    background-color: transparent;
+  }
+.nav1 a:hover .droopdown:hover .dropbtn {
+    background-color: transparent;
+  }
+
+.Statistic-content {
+    display: none;
+    background-color: #535250;
+    min-width: auto;
+    box-shadow: black;
+    z-index: 1;
+}
+
+.Statistic-content a {
+    float: none;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+}
+
+.Statistic-content a:hover {
+    background-color: #535250;
+}
+
+  .droopdown:hover .Statistic-content {
+    display: block;
+  }
+ .aside_1{
+    display: flex;
+    flex-direction:column-reverse;
+    background-color: darkolivegreen;
+ }
+ .Informacion{
+    display: flex;
+    margin-left: 0%;
+    padding: 0px;
+
+ }
+
+ .Other a{
+    display: flex;
+    flex-direction: row;
+    color:white;
+    padding: 4px;
+    background-color: transparent;
+ }
+ .Other a:hover{
+    background-color: transparent;
+    color:  darkred;
+}
+.imacharge img{
+
+    width: 80px;
+    height: 80px;
+    position: relative;
+    animation: mymove 5s infinite;
+
+}
+.imafly img{
+
+    width: 80px;
+    height: 80px;
+    position: relative;
+    animation: mymove2 5s infinite;
+}
+.swim img{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    animation: mymove3 5s infinite;
+}
+
+
+@keyframes mymove {
+    0%   {left: 0px;}
+    12.5%  {left: 50px;}
+    25%  {left: 100px}
+    37.5% {left: 200px;}
+    50%   {left: 0px;}
+    62.5%  {left: -50px;}
+    75%  {left: -100px;}
+    87.5% {left: -200px;}
+    100%{left: 0px;}
+}
+@keyframes mymove2 {
+    0%   {left: 0px;}
+    12.5%  {top: 20px;}
+    25%  {left: 190px;}
+    37.5% {bottom: 20px;}
+    50%   {left: 0px;}
+    62.5%  {top: 20px;}
+    75%  {left: -190px;}
+    87.5% {bottom: 20px;}
+    100%{left: 0px;}
+}
+
+@keyframes mymove3 {
+    0%{
+        left:190px;
+    }
+    20%{
+        transform: rotate(20deg);
+    }
+    40%{
+        transform: rotate(0deg);
+    }
+    60%{
+        left: -190px;
+    }
+    80%{
+        transform: rotate(-20deg);
+    }
+    90%{
+        transform: rotate( 0deg);
+    }
+    100%{
+        left: 190px;
+    }
+}
+@keyframes mymove4 {
+    from {
+        transform: rotate(20deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+@keyframes mymove5 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-20deg);
+    }
+}
+@keyframes mymove6 {
+    from {
+        transform: rotate(-20deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.filled{
+    border-style: groove;
+    background-color: #535250;
+}
+.footer{
+    color: white;
+    text-align: center;
+    background-image: url("../images/separador-remove-preview-removebg-preview (1).png");
+    background-repeat: no-repeat;
+    align-items: center;
+    font-size: 20px;
+    min-height: 175px;
+    background-size: 100% 100%;
+
+}
+
+.footer a{
+    color: white;
+}
+.ima img{
+    width: 40%;
+}
+.ima{
+    width: 40%;
+}
+
+.ima1 img{
+    width: 80%;
+}
+.ima_1{
+    align-self: center;
+}
+.ima3 img{
+    display: flex;
+    max-width: 100%;
+}
+.post {
+    display: flex;
+    background-color: #535250;
+    text-align: left;
+    align-items: self-start;
+    opacity: 0.95;
+    min-width: 62%;
+    max-width: 62%;
+    flex-direction: column;
+    color:white;
+
+}
+
+@media screen and (min-width: 1400px){
+    .textos{
+        max-width: 71%;
+        min-width: 71%;
+    }
+    .Other{
+        max-width: 11.5%;
+        min-width: 11.5%;
+        padding: 3%;
+    }
+    .nav{
+        max-width: 11.5%;
+        min-width: 11.5%;
+        padding: 3%;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer{
+        background-image: url("../images/separador3-r.png");
+        min-height: 69px;
+        max-height: 69px;
+    }
+    .nav{
+        background-image: url("../images/haty_skoll4.jpg");
+        background-size: 100% 100%;
+        max-width: 100%;
+        min-width: 100%;
+        min-height: auto;
+        position: initial;
+        flex-direction: row;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .Other{
+        background-image: url("../images/haty_skoll12.jpg");
+        background-size: 100% 100%;
+        max-width: 100%;
+        min-width: 100%;
+        min-height: 200px;
+        max-width: 200px;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-right: 0px;
+
+    }
+    .header{
+        background-image: url("../images/separador3-r.png");
+        max-width: 100%;
+        min-width: 100%;
+        min-height: 69px;
+        max-height: 69px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    iframe{
+        height: 300px;
+        width: 400px;
+    }
+    .ima img{
+        width: 60%;
+    }
+    .ima1 img{
+        width: 60%;
+    }
+    .textos{
+        max-width: 100%;
+        min-width: 100%;
+        min-height: 150px;
+        text-align: left;
+        align-items: self-start;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .nave{
+        position: initial;
+        top:0;
+    }
+    .textos figure{
+        align-self: center;
+    }
+    .poem{
+        text-align: left;
+        align-items: start;
+        width: 50%;
+    }
+    .ima_1{
+        align-self: center;
+    }
+}
+
+
+
