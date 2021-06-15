@@ -4,7 +4,7 @@
 {% block content %}
     <section class="textos">
     <h2><p>Quizz</p></h2>
-        <form method="post" id="form1" action="{% url 'quizzresult' %}">
+        <form method="post" id="form1">
             {% csrf_token %}
             {{ form.as_p }}
                 <h3>1) Who is the main Charater in The Vikings?</h3>
