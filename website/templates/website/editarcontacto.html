@@ -8,11 +8,10 @@
     <p></p>
         <form method="Post" action="{% url 'editarco' contacto_id %}">
             {% csrf_token %}
-
             {{ form.as_p }}
-            <a href="{% url 'contact' %} " role="button" class="btn-danger">Cancel</a>
-            <input type="submit" value= "Gravar" class="btn btn-success">
-            <a href="{% url 'delete' contacto_id %} " role="button" class="btn-danger">Delete</a>
+            <a href="{% url 'contact' %} " role="button" class="btn btn-success">Cancel</a>
+            <input type="submit" value= "Save" class="btn btn-success">
+            <a href="{% url 'delete' contacto_id %} " role="button" class="btn btn-success">Delete</a>
         </form>
     </section>
 {% endblock %}

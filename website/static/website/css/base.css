@@ -335,10 +335,6 @@ header{
 }
 
 @media screen and (max-width: 1100px){
-    section{
-        display: flex;
-        flex-direction: column;
-    }
     .footer{
         background-image: url("../images/separador3-r.png");
         min-height: 69px;
@@ -349,9 +345,9 @@ header{
         background-size: 100% 100%;
         max-width: 100%;
         min-width: 100%;
-        min-height: auto;
-        position: initial;
-        flex-direction: row;
+        min-height: 200px;
+        max-width: 200px;
+        flex-direction: column;
         margin-left: 0px;
         margin-right: 0px;
     }
@@ -365,7 +361,6 @@ header{
         flex-direction: column;
         margin-left: 0px;
         margin-right: 0px;
-
     }
     .header{
         background-image: url("../images/separador3-r.png");
@@ -386,17 +381,20 @@ header{
     .ima1 img{
         width: 60%;
     }
-    .textos{
+    textos{
         max-width: 100%;
         min-width: 100%;
         min-height: 150px;
-        text-align: left;
-        align-items: self-start;
         margin-left: 0px;
         margin-right: 0px;
+        text-align: center;
+        align-items: center;
+        opacity: 0.95;
+        flex-direction: column;
+        color:white;
     }
     .nave{
-        position: initial;
+        position: center;
         top:0;
     }
     .textos figure{
