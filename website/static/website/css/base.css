@@ -335,6 +335,10 @@ header{
 }
 
 @media screen and (max-width: 1100px){
+    section{
+        display: flex;
+        flex-direction: column;
+    }
     .footer{
         background-image: url("../images/separador3-r.png");
         min-height: 69px;
@@ -345,11 +349,13 @@ header{
         background-size: 100% 100%;
         max-width: 100%;
         min-width: 100%;
-        min-height: 200px;
-        max-width: 200px;
-        flex-direction: column;
+        position: relative;
+        top: 0;
+        min-height: auto;
+        flex-direction: row;
         margin-left: 0px;
         margin-right: 0px;
+
     }
     .Other{
         background-image: url("../images/haty_skoll12.jpg");
@@ -361,6 +367,7 @@ header{
         flex-direction: column;
         margin-left: 0px;
         margin-right: 0px;
+
     }
     .header{
         background-image: url("../images/separador3-r.png");
@@ -375,39 +382,53 @@ header{
         height: 300px;
         width: 400px;
     }
-    .ima img{
-        width: 60%;
+    .ima{
+        size: 80px;
+
     }
-    .ima1 img{
-        width: 60%;
+    .ima1{
+        size: 80px;
     }
-    textos{
+    .textos{
         max-width: 100%;
         min-width: 100%;
         min-height: 150px;
+        text-align: left;
+        align-items: initial;
         margin-left: 0px;
         margin-right: 0px;
-        text-align: center;
-        align-items: center;
-        opacity: 0.95;
-        flex-direction: column;
-        color:white;
-    }
-    .nave{
-        position: center;
-        top:0;
     }
     .textos figure{
         align-self: center;
     }
+    .titulo{
+        size: 90px;
+    }
+    .textos p{
+        size: 90px;
+    }
     .poem{
         text-align: left;
-        align-items: start;
-        width: 50%;
+        align-items: initial;
+        size: 50px;
     }
     .ima_1{
         align-self: center;
     }
+}
+
+.imacharge img{
+    size: 30px;
+    display: flex;
+
+}
+.filled{
+    border-style: groove;
+    background-color: #535250;
+}
+.titulo{
+    font-size: 140%;
+    font-family: Verdana;
 }
 
 

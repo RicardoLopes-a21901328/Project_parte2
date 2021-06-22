@@ -94,28 +94,28 @@ def quizz_result(request):
         return HttpResponseRedirect(reverse('quizz'))
 
     if request.method == "post":
-        quizz.primeira = request.method["opinion1"].value
-        quizz.segunda = request.method["opinion2"].value
-        quizz.terceira = request.method["opinion3"].value
-        quizz.quarta = request.method["opinion4"].value
-        quizz.quinta = request.method["opinion5"]
-        quizz.sexta = request.method["opinion6"]
-        quizz.setima = request.method["opinion7"]
-        quizz.oitava = request.method["opinion8"]
-        quizz.nona = request.method["opinion9"]
-        quizz.decima = request.method["opinion10"]
+        quizz.primeira = request.id["opinion1"].value
+        quizz.segunda = request.id["opinion2"].value
+        quizz.terceira = request.id["opinion3"].value
+        quizz.quarta = request.id["opinion4"].value
+        quizz.quinta = request.id["opinion5"].value
+        quizz.sexta = request.id["opinion6"].value
+        quizz.setima = request.id["opinion7"].value
+        quizz.oitava = request.id["opinion8"].value
+        quizz.nona = request.id["opinion9"].value
+        quizz.decima = request.id["opinion10"].value
 
-        if quizz.primeira != "1":
+        if quizz.primeira != "1" and quizz.primeira == "":
             primeira = 0
         else:
             primeira = 1
 
-        if quizz.segunda != "1":
+        if quizz.segunda != "1" and quizz.segunda == "":
             segunda = 0
         else:
             segunda = 1
 
-        if quizz.terceira != "1":
+        if quizz.terceira != "1" and quizz.terceira == "":
             terceira = 0
         else:
             terceira = 1
