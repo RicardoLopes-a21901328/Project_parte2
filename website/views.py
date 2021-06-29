@@ -2,11 +2,9 @@ from django.contrib.auth import login, authenticate, logout
 from django.http import HttpResponseRedirect
 from django.shortcuts import render, reverse
 import datetime
-
 from .forms import ContacoForm
 from .models import contacto
 from .models import quizz
-
 
 
 def home_page_view(request):
@@ -16,7 +14,6 @@ def home_page_view(request):
         'lista': lista,
     }
     return render(request, 'website/home.html', context)
-
 def login_page_view(request):
     return render(request, 'website/Login.html')
 def media_page_view(request):
@@ -30,12 +27,14 @@ def war_page_view(request):
 def comments_page_view(request):
     return render(request, 'website/Comments.html')
 def information_page_view(request):
-    return render(request, 'website/imformation.html')
-def contact_page_view(request):
-    context = {'contactos': contacto.objects.all()}
-    return render(request, 'website/contact.html',context)
+    return render(request, 'website/information.html')
 def quiz_page_view(request):
     return render(request, 'website/quizz.html')
+
+def contact_page_view(request):
+    context = {'contactos': contacto.objects.all()}
+    return render(request, 'website/Contact.html',context)
+
 def novocontact_page_view(request):
     form = ContacoForm(request.POST or None)
     if form.is_valid():
@@ -94,58 +93,58 @@ def quizz_result(request):
         return HttpResponseRedirect(reverse('quizz'))
 
     if request.method == "post":
-        quizz.primeira = request.id["opinion1"].value
-        quizz.segunda = request.id["opinion2"].value
-        quizz.terceira = request.id["opinion3"].value
-        quizz.quarta = request.id["opinion4"].value
-        quizz.quinta = request.id["opinion5"].value
-        quizz.sexta = request.id["opinion6"].value
-        quizz.setima = request.id["opinion7"].value
-        quizz.oitava = request.id["opinion8"].value
-        quizz.nona = request.id["opinion9"].value
-        quizz.decima = request.id["opinion10"].value
+        quizz.primeira = request.method["opinion1"].
+        quizz.segunda = request.method["opinion2"].value
+        quizz.terceira = request.method["opinion3"].value
+        quizz.quarta = request.method["opinion4"].value
+        quizz.quinta = request.method["opinion5"].value
+        quizz.sexta = request.method["opinion6"].value
+        quizz.setima = request.method["opinion7"].value
+        quizz.oitava = request.method["opinion8"].value
+        quizz.nona = request.method["opinion9"].value
+        quizz.decima = request.method["opinion10"].value
 
-        if quizz.primeira != "1" and quizz.primeira == "":
+        if quizz.primeira != '1' and quizz.primeira == '':
             primeira = 0
         else:
             primeira = 1
 
-        if quizz.segunda != "1" and quizz.segunda == "":
+        if quizz.segunda != '1' and quizz.segunda == '':
             segunda = 0
         else:
             segunda = 1
 
-        if quizz.terceira != "1" and quizz.terceira == "":
+        if quizz.terceira != '1' and quizz.terceira == '':
             terceira = 0
         else:
             terceira = 1
 
-        if quizz.quinta != "1":
+        if quizz.quinta != '1':
             quinta = 0
         else:
             quinta = 1
 
-        if quizz.sexta != "1":
+        if quizz.sexta != '1':
             sexta = 0
         else:
             sexta = 1
 
-        if quizz.setima != "1":
+        if quizz.setima != '1':
             setima = 0
         else:
             setima = 1
 
-        if quizz.oitava != "1":
+        if quizz.oitava != '1':
             oitava = 0
         else:
             oitava = 1
 
-        if quizz.nona != "1":
+        if quizz.nona != '1':
             nona = 0
         else:
             nona = 1
 
-        if quizz.decima != "1":
+        if quizz.decima != '1':
             decima = 0
         else:
             decima = 1

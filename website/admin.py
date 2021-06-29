@@ -1,5 +1,7 @@
 from django.contrib import admin
 
+from django.contrib import admin
+
 from .models import Utilizador
 from .models import contacto
 from .models import quizz

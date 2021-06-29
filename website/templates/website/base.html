@@ -1,16 +1,14 @@
 {% load static %}
-<html>
     <html lang="pt">
     <head>
-        {% load static %}
         <meta charset="UTF-8">
         <title>Viking Age</title>
         <meta name = "author" content="Student">
         <meta name = "keywords" content="Viking">
         <meta name = "description" content="Website de projecto">
         <meta name = "location" content="ulusofona">
-        <link rel="shortcut icon" href="{% static 'website/images/haty_skoll2.jpg'%}">
-        <link rel="stylesheet" href="{% static 'website/css/base.css'%}">
+        <link rel="shortcut icon" href="{%static 'website/images/haty_skoll2.jpg'%}">
+        <link rel="stylesheet" href="{%static 'website/css/base.css'%}">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -24,19 +22,19 @@
 <section class="Informacion">
 <section class="nav">
    <section class="nave"><nav>
-       <button type="button" class="btn btn-outline-secondary"><a href="{% url 'home' %}"><i class="material-icons">home</i>Home </a></button>
-       <button type="button" class="btn btn-outline-secondary"><a href="{% url 'login' %}"><i class="material-icons">home</i>Login</a></button>
-       <button type="button" class="btn btn-outline-secondary"><a href="{% url 'information' %}"><i class="material-icons">library_books</i>Webbsite Information </a></button>
-       <button type="button" class="btn btn-outline-secondary"><a href="{% url 'quizz' %}"><i class="material-icons">library_books</i>A Viking Quiz</a></button>
-       <button type="button" class="btn btn-outline-secondary"><a href="{% url 'comments' %}"><i class="material-icons">supervised_user_circle</i>Comment Section</a></button>
-       <button type="button" class="btn btn-outline-secondary"><a href="{% url 'contact' %}"><i class="material-icons">library_books</i>Contact</a></button>
+       <a type="button" class="btn btn-outline-secondary"><a href="{% url 'home' %}"><i class="material-icons">home</i>Home </a></a>
+       <a type="button" class="btn btn-outline-secondary"><a href="{% url 'login' %}"><i class="material-icons">home</i>Login</a></a>
+       <a type="button" class="btn btn-outline-secondary"><a href="{% url 'information' %}"><i class="material-icons">library_books</i>Webbsite Information </a></a>
+       <a type="button" class="btn btn-outline-secondary"><a href="{% url 'quizz' %}"><i class="material-icons">library_books</i>A Viking Quiz</a></a>
+       <a type="button" class="btn btn-outline-secondary"><a href="{% url 'comments' %}"><i class="material-icons">supervised_user_circle</i>Comment Section</a></a>
+       <a type="button" class="btn btn-outline-secondary"><a href="{% url 'contact' %}"><i class="material-icons">library_books</i>Contact</a></a>
         <u><div class="droopdown">
-            <button type="button" class="btn btn-outline-secondary"><a class="dropbtn"> <i class="material-icons">menu</i> Viking Informacion</a></button>
+            <a type="button" class="btn btn-outline-secondary"><a class="dropbtn"> <i class="material-icons">menu</i> Viking Informacion</a></a>
             <div class="Statistic-content">
-                <button type="button" class="btn btn-outline-secondary"><a href="{% url 'war' %}"><i class="material-icons">library_books</i>Warfare</a></button>
-                <button type="button" class="btn btn-outline-secondary"><a href="{% url 'raids' %}"><i class="material-icons">library_books</i>Geography and Raids</a></button>
-                <button type="button" class="btn btn-outline-secondary"><a href="{% url 'media' %}"><i class="material-icons">movie</i>Media </a></button>
-                <button type="button" class="btn btn-outline-secondary"><a href="{% url 'religion' %}"><i class="material-icons">library_books</i>Religion</a></button>
+                <a type="button" class="btn btn-outline-secondary"><a href="{% url 'war' %}"><i class="material-icons">library_books</i>Warfare</a></a>
+                <a type="button" class="btn btn-outline-secondary"><a href="{% url 'raids' %}"><i class="material-icons">library_books</i>Geography and Raids</a></a>
+                <a type="button" class="btn btn-outline-secondary"><a href="{% url 'media' %}"><i class="material-icons">movie</i>Media </a></a>
+                <a type="button" class="btn btn-outline-secondary"><a href="{% url 'religion' %}"><i class="material-icons">library_books</i>Religion</a></a>
             </div>
         </div>
         </u>
@@ -59,5 +57,4 @@
 </body>
 <footer class="footer">
     <br>Student of <a href="https://www.ulusofona.pt/">ulusofona</a> 2021</br>
-</footer>
-</html>
+</footer></html>

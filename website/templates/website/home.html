@@ -1,19 +1,23 @@
-<!DOCTYPE html>
 <html lang="en">
 {% extends 'website/base.html' %}
-{% load static %}
-
 {% block content %}
+    {% load static %}
     <section class="textos">
         <figure class="swim">
             <img src="{% static 'website/images/viking_ship-removebg-preview.png'%}" alt = "My image">
         </figure>
-        <article><p>
-            <h2><a>Introduction</a></h2>
-        </p>
-        <p>Vikings were the seafaring Norse people from southern Scandinavia in the present-day Denmark, Norway and Sweden, who from the late 8th to late 11th centuries raided, pirated, traded and settled throughout parts of Europe. They explored both westward to England, Iceland, Greenland, and Vinland as well as eastward and southward through Russia to Constantinople, Iran, and Arabia. In the countries they raided and settled, the period is known as the Viking Age.</p></article>
-    <center><iframe width="auto" height="200" src="https://www.youtube.com/embed/ExvEIOWB-H0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
-    <center><svg width = 500 height ="300">
+        <script>
+            document.addEventListener('DOMContentLoaded', function (){
+               document.querySelector('button').forEach(button => {
+                   button.onclick = showPage(this.dataset.page);
+               });
+            });
+            function  showPage(page){
+
+            }
+        </script>
+    <center><iframe id="video" width="auto" height="200" src="https://www.youtube.com/embed/ExvEIOWB-H0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+    <center><svg id="frame"width = 500 height ="300">
         <g transform="translate(100,100)">
             <text id="TextElement" x="-40" y="-20"  transform = rotate(30,120,400)><a href="https://www.history.com/topics/exploration/vikings-history">Raids</a>
               </text>

@@ -4,7 +4,7 @@
 {% block content %}
  <section class="textos">
     <center><h2><p>Contact</p></h2></center>
-        {% for contacto in contactos %}
+     {% for contacto in contactos %}
             <p>{{ contacto.name }}</p>
             <section style="border-style: solid ; border: white">{{ contacto.mensagem }}</section><br>
             <a href="{% url 'editarco' contacto.id %}" class="btn btn-success" style="float: right;margin-rigth: 10px">Edit</a>

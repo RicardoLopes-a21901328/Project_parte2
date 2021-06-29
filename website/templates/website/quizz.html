@@ -2,27 +2,9 @@
 {% extends 'website/base.html'%}
 {% load static %}
 {% block content %}
-    <script>
-    document.addEventListener('DOMContentLoaded',function (){
-        document.querySelector('form').querySelector("#submit")
-            let primeira = querySelector('form').querySelector("#1").value;
-            let segunda =  document.querySelector('form').querySelector("#2").value;
-            let terceira = document.querySelector('form').querySelector("#3").value;
-            let quarta = document.querySelector('form').querySelector("#4").value;
-            let quinta = document.querySelector('form').querySelector("#5").value;
-            let seista = document.querySelector('form').querySelector("#6").value;
-            let setima = document.querySelector('form').querySelector("#7").value;
-            let oitava = document.querySelector('form').querySelector("#8").value;
-            let nona = document.querySelector('form').querySelector("#9").value;
-            let decima = document.querySelector('form').querySelector("#10").value;
-            let soma = primeira + segunda + terceira +quarta +quinta +seista + setima + oitava + nona + decima
-
-
-    });
-    </script>
     <section class="textos">
     <h2><p>Quizz</p></h2>
-        <form method="post" id="form1">
+        <form method="post" id="form1" action="{% url 'quizzresult'%}">
             {% csrf_token %}
             {{ form.as_p }}
                 <h3>1) Who is the main Charater in The Vikings?</h3>
