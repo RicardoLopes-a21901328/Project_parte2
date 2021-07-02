@@ -86,14 +86,14 @@ def logout_view(request):
         'message': 'Logged out'})
 
 def quizz_result(request):
-
     form = ContacoForm(request.POST or None)
     if form.is_valid():
         form.save()
-        return HttpResponseRedirect(reverse('quizz'))
+        return HttpResponseRedirect(reverse('contact'))
 
+    context = {'form': form}
     if request.method == "post":
-        quizz.primeira = request.method["opinion1"].
+        quizz.primeira = request.method["opinion1"].id["opinion1"].value
         quizz.segunda = request.method["opinion2"].value
         quizz.terceira = request.method["opinion3"].value
         quizz.quarta = request.method["opinion4"].value
@@ -153,6 +153,7 @@ def quizz_result(request):
             quarta = 0
         else:
             quarta = 1
+
         quizz.total = primeira + segunda + terceira + quarta + quinta + sexta + oitava + setima + nona + decima
 
         return render(request, 'website/quizz.html',{'message':{quizz.total}})
