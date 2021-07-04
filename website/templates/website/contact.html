@@ -24,7 +24,6 @@
             <div class="ola" id="page1">
                 <section style="border-style: solid ; border: white">{{ contacto.mensagem }}</section><br>
             </div>
-            <button data-page="page1">Writen message</button>
             <a href="{% url 'editarco' contacto.id %}" class="btn btn-success" style="float: right;margin-rigth: 10px">Edit</a>
             <br><br>
         {% endfor %}

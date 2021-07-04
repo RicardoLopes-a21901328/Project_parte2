@@ -66,7 +66,8 @@ def login_view(request):
         user = authenticate(
                     request,
                     username=username,
-                    password=password
+                    password=password,
+
         )
 
         if user is not None:
@@ -150,7 +151,7 @@ def quizz_result(request):
         else:
             quizz.decima = 1
 
-        if quarta != 700:
+        if quarta != 700 or quarta== None:
             quizz.quarta = 0
         else:
             quizz.quarta = 1
