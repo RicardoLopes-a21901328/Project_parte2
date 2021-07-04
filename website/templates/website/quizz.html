@@ -4,46 +4,46 @@
 {% block content %}
     <section class="textos">
     <h2><p>Quizz</p></h2>
-        <form method="post" id="form1" action="{% url 'quizzresult'%}">
+        <form method="POST" id="form1" action="{% url 'quizzresult'%}">
             {% csrf_token %}
             {{ form.as_p }}
                 <h3>1) Who is the main Charater in The Vikings?</h3>
                 <radiogroup>
-                    <input type="radio" name="opinion1" id="1" value= "1">
+                    <input type="radio" name="opinion1" id="opinion1" value="1">
                     <label for="opinion1">Ragnar Lothbrok</label><br>
-                    <input type="radio" name="opinion1" id="2" value= "0">
+                    <input type="radio" name="opinion1" id="opinion1" value="0">
                     <label for="opinion2">Galkron</label><br>
-                    <input type="radio" name="opinion1" id="3" value= "0">
+                    <input type="radio" name="opinion1" id="opinion1" value="0">
                     <label for="opinion3">Igrid</label><br>
-                    <input type="radio" name="opinion1" id="4" value= "0">
+                    <input type="radio" name="opinion1" id="opinion1" value="0">
                     <label for="opinion4">Bjorn</label><br>
-                    <input type="radio" name="opinion1" id="5" value= "0">
+                    <input type="radio" name="opinion1" id="opinion1" value="0">
                     <label for="opinion5">Erick</label><br>
                 </radiogroup>
                 <br></br>
                 <p><h3>2) Which is the home land of the vikings?</h3></p>
                 <radiogroup>
-                    <input type="radio" name="opinion2" id="2" value= "1">
+                    <input type="radio" name="opinion2" id="opinion2" value="1">
                     <label for="Scandinavia">Scandinavia</label><br>
-                    <input type="radio" name="opinion2" id="2" value="0">
+                    <input type="radio" name="opinion2" id="opinion2" value="0">
                     <label for="Egipt">Egipt</label><br>
-                    <input type="radio" name="opinion2" id="2" value= "0">
+                    <input type="radio" name="opinion2" id="opinion2" value="0">
                     <label for="Atlantis">Atlantis</label><br>
-                    <input type="radio" name="opinion2" id="2" value="0">
+                    <input type="radio" name="opinion2" id="opinion2" value="0">
                     <label for="Mau">Lisbon</label><br>
-                    <input type="radio" name="opinion2" id="2" value= "0">
+                    <input type="radio" name="opinion2" id="opinion2" value="0">
                     <label for="Normandy">Normandy</label><br>
                 </radiogroup>
                 <br></br>
                 <h3>3) What is the other name for the viking dagger?</h3>
                 <radiogroup>
-                    <input type="checkbox" name="opinion3" id = "3" value= "0">
+                    <input type="checkbox" name="opinion3" id="opinion3" value="0">
                     <label for="knife">knife</label><br>
-                    <input type="checkbox" name="opinion3" id = "3" value= "1">
+                    <input type="checkbox" name="opinion3" id="opinion3" value="1">
                     <label for="Seax">Seax</label><br>
-                    <input type="checkbox" name="opinion3" id = "3" value= "0">
+                    <input type="checkbox" name="opinion3" id="opinion3" value="0">
                     <label for="Fang">Fang</label><br>
-                    <input type="checkbox" name="opinion3" id = "3" value= "0">
+                    <input type="checkbox" name="opinion3" id="opinion3" value="0">
                     <label for="Claw">Claw</label><br>
                 </radiogroup>
                 <br></br>
@@ -54,50 +54,50 @@
                 <br></br>
                 <h3>5) Where was normaly raided by vikings?</h3>
                 <checkboxgroup>
-                    <input type="checkbox" name="opinion5" id = "5" value="1">
+                    <input type="checkbox" name="opinion5" id="opinion5" value="1">
                     <label for="ports">ports</label><br>
-                    <input type="checkbox" name="opinion5" id = "5" value="0">
+                    <input type="checkbox" name="opinion5" id="opinion5" value="0">
                     <label for="capitals">capitals</label><br>
-                    <input type="checkbox" name="opinion5" id = "5" value="0">
+                    <input type="checkbox" name="opinion5" id="opinion5" value="0">
                     <label for="deserts">deserts</label><br>
                 </checkboxgroup>
                 <br></br>
                 <h3>6) Which is the one of the gods in the norce mythology?</h3>
                 <p>
-                    <input type="checkbox" name="opinion6" id = "6" value= "1">
+                    <input type="checkbox" name="opinion6" id="opinion6" value="1">
                     <label for="Muito bom">Odin</label><br>
-                    <input type="checkbox" name="opinion6" id = "6" value = "0">
+                    <input type="checkbox" name="opinion6" id="opinion6" value="0">
                     <label for="Razoavel">Zeus</label><br>
-                    <input type="checkbox" name="opinion6" id = "6" value = "0">
+                    <input type="checkbox" name="opinion6" id="opinion6" value="0">
                     <label for="Mau">Ra</label><br>
                 </p>
                 <br></br>
                 <h3>7) What is the name of the second rune in the religion section?</h3>
                 <p>
-                    <input type="checkbox" name="opinion7" id = "7" value= "1">
+                    <input type="checkbox" name="opinion7" id="opinion7" value="1">
                     <label for="Muito bom">Fehu</label><br>
-                    <input type="checkbox" name="opinion7" id = "7" value= "0">
+                    <input type="checkbox" name="opinion7" id="opinion7" value="0">
                     <label for="Razoavel">isaz</label><br>
-                    <input type="checkbox" name="opinion7" id = "7" value= "0" >
+                    <input type="checkbox" name="opinion7" id ="opinion7" value="0" >
                     <label for="Mau">dagaz</label><br>
                 </p>
                 <br></br>
                 <h3>8) Which is the god is close related to the crow?</h3>
                 <p>
-                    <input type="checkbox" name="opinion8" id = "8" value= "1">
+                    <input type="checkbox" name="opinion8" id="opinion8" value="1">
                     <label for="Muito bom">Odin</label><br>
-                    <input type="checkbox" name="opinion8" id = "8" value= "0">
+                    <input type="checkbox" name="opinion8" id="opinion8" value="0">
                     <label for="Razoavel">Fenrir</label><br>
-                    <input type="checkbox" name="opinion8" id = "8" value= "0">
+                    <input type="checkbox" name="opinion8" id="opinion8" value="0">
                     <label for="Mau">Loki</label><br>
                 </p>
                     <h3>9) Which is normally the Viking favorite weapon?</h3>
                 <p>
-                    <input type="checkbox" name="opinion9" id = "9" value= "1">
+                    <input type="checkbox" name="opinion9" id="opinion9" value="1">
                     <label for="Muito bom">Axe</label><br>
-                    <input type="checkbox" name="opinion9" id = "9" value= "0">
+                    <input type="checkbox" name="opinion9" id="opinion9" value="0">
                     <label for="Razoavel">Long sword</label><br>
-                    <input type="checkbox" name="opinion9" id = "9" value= "0">
+                    <input type="checkbox" name="opinion9" id="opinion9" value="0">
                     <label for="Mau">Pistol</label><br>
                 </p>
                 <br></br>
@@ -113,13 +113,13 @@
                             <p>And in a howl that lies</p>
                             <p>The bird will die </p>
                             <p>And the land will change to a new lie</p>
-                    <input type="checkbox" name="opinion10" id = "10" value= "0">
+                    <input type="checkbox" name="opinion10" id="opinion10" value="0">
                     <label for="Muito bom">Wolf-Human-End-Raven</label><br>
-                    <input type="checkbox" name="opinion10" id = "10" value= "0">
+                    <input type="checkbox" name="opinion10" id="opinion10" value="0">
                     <label for="Muito bom">Human-Wolf-End-Raven</label><br>
-                    <input type="checkbox" name="opinion10" id = "10" value= "0">
+                    <input type="checkbox" name="opinion10" id="opinion10" value="0">
                     <label for="Razoavel">End-Human-Wolf-Raven</label><br>
-                    <input type="checkbox" name="opinion10" id = "10" value= "1">
+                    <input type="checkbox" name="opinion10" id="opinion10" value="1">
                     <label for="Mau">Human-Raven-Wolf-End</label><br>
                 </p>
                 <br></br>
