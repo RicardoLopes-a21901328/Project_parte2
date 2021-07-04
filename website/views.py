@@ -35,6 +35,9 @@ def contact_page_view(request):
     context = {'contactos': contacto.objects.all()}
     return render(request, 'website/Contact.html',context)
 
+def ver_user(request, contact_name):
+    return render(request, 'website/user.html')
+
 def novocontact_page_view(request):
     form = ContacoForm(request.POST or None)
     if form.is_valid():
