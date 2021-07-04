@@ -17,7 +17,13 @@
             document.addEventListener('DOMContentLoaded', function () {
                document.querySelectorAll('button').forEach(button => {
                    button.onclick = function (){ showPage(this.dataset.page);
-                   }
+                  if(this.dataset.page==="page3"){
+                        alert("Welcome");
+                  }
+                  if(this.dataset.page==="page4"){
+                        alert("Reducing .... complete!!");
+                  }
+               }
                });
             });
 </script>
